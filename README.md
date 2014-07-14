@@ -1,12 +1,10 @@
 # Refactoring Problems (Week 7)
 ## What is this:
-This repo is a collection of problems done in class to practice refacoting our code. 
+This repo is a collection of problems done in class to practice refacorting our code. 
 
 ## Problems:
 1. Pokr 
-
-(because everything is cooler with just the "r")
-
+	* (because everything is cooler with just the "r")
 2. more to come...
 
 ## Notes:
@@ -16,5 +14,4 @@ This repo is a collection of problems done in class to practice refacoting our c
 [Twitter](https://twitter.com/mikeymurph77)
 
 [Blog](http://mikeymurph.me/)
-
-** *Note:* ** At this moment the blog is empty. Will start posting ASAP. 
+***Note:*** At this moment the blog is empty. Will start posting ASAP. 
