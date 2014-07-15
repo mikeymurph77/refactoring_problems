@@ -21,6 +21,7 @@ class Round
 			puts @individual_hand 
 		end
 
+		seperate_hands = @individual_hand
 		#split up hands per player
 
 	end
