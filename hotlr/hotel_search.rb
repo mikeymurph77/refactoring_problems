@@ -7,11 +7,11 @@ class HotelSearch
   end
 
   def search
-    promt_for_hotel_name
+    prompt_for_hotel_name
     search_match_hotel
   end
 
-  def promt_for_hotel_name
+  def prompt_for_hotel_name
     puts "What property? > "
     @user_search = gets.chomp
   end
@@ -21,7 +21,7 @@ class HotelSearch
       hotel.name_of_hotel == @user_search 
     } || NullHotel.new
 
-    puts found_hotel.name_of_hotel
+    puts found_hotel.name
   end
 end
 

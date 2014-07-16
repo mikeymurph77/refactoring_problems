@@ -3,7 +3,7 @@ class Hotel
     @row = row
   end
 
-  def name_of_hotel
+  def name
     @row["Hotel"]
   end
 end
