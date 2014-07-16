@@ -24,7 +24,7 @@ class Rock_Paper_Scissors
 		if gets.chomp == "y"
 			Rock_Paper_Scissors.new
 		else 
-			puts "OK...come again"
+			puts "OK...come again"t
 			exit
 		end
 	end
