@@ -9,7 +9,7 @@ This repo is a collection of problems done in class to practice refacorting our 
   * A simple RPS game that users can select a move and play against a computer. 
 3. Hotelr
   * Reads CSV file, stores the information, and displays hotel's information when
-  * a hotel is queried.
+   a hotel is queried.
 4. more to come...
 
 ## Notes:
