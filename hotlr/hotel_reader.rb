@@ -8,7 +8,7 @@ class HotelReader
   
   def read
     CSV.foreach(@filename, headers: true) do |row|
-      puts row[0]
+      puts row["Hotel"]
     end
   end
 end
