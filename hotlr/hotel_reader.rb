@@ -7,13 +7,10 @@ class HotelReader
   end
   
   def read
-    hotel = {}
-    
-    CSV.foreach(@filename, :headers => true) do |row|
+    CSV.foreach(@filename, headers: true) do |row|
       puts row[0]
     end
   end
-
 end
 
 hotlr = HotelReader.new("hotels.csv")
