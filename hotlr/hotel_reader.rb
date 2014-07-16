@@ -1,17 +1,19 @@
 require "csv"
 require "pp"
 
+require "./hotel"
+
 class HotelReader
   def initialize(filename)
     @filename = filename
+    @hotels = []
   end
   
   def read
     CSV.foreach(@filename, headers: true) do |row|
-      puts row["Hotel"]
+      @hotels << Hotel.new(row)
     end
   end
-end
 
-hotlr = HotelReader.new("hotels.csv")
-hotlr.read
+  attr_reader :hotels
+end
