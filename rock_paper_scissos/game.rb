@@ -24,7 +24,7 @@ class Rock_Paper_Scissors
 		if gets.chomp == "y"
 			Rock_Paper_Scissors.new
 		else 
-			puts "OK...come again"t
+			puts "OK...come again"
 			exit
 		end
 	end
@@ -47,14 +47,14 @@ class Rock_Paper_Scissors
 
 	def possible_combinations
 		possible_combinations = {
-			"r" => { "p" => "Loser", "s" => "Winner" },
-			"p" => { "r" => "Winner", "s" => "Loser" },
-			"s" => { "r" => "Loser", "p" => "Winner" }
+			"r" => { "p" => "Loser", "s" => "Winner", "r" => "...nothing. It's a tie" },
+			"p" => { "r" => "Winner", "s" => "Loser", "p" => "...nothing. It's a tie"  },
+			"s" => { "r" => "Loser", "p" => "Winner", "s" => "...nothing. It's a tie"  }
 		}
 
 		@computers_move = @computer_move_generator.computers_move
 
-		@result = possible_combinations[@computers_move][@move]
+		@result = possible_combinations[@move][@computers_move]
 	end
 
 	def results
