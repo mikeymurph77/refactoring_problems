@@ -9,8 +9,8 @@ class HotelSearch
 
   def search
     prompt_for_hotel_name
-    find_matching_hotel
-    query_result
+    found_hotel = find_matching_hotel
+    puts found_hotel.information
   end
 
   def prompt_for_hotel_name
@@ -19,13 +19,9 @@ class HotelSearch
   end
 
   def find_matching_hotel
-    @found_hotel = @hotels.find { |hotel|
+    @hotels.find { |hotel|
       hotel.name == @user_search 
     } || NullHotel.new
-  end
-
-  def query_result
-    puts @found_hotel.query_information
   end
 end
 
