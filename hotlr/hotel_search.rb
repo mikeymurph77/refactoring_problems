@@ -1,5 +1,6 @@
 require "./hotel"
 require "./hotel_reader"
+require "./null_hotel"
 
 class HotelSearch
   def initialize(hotels)
@@ -25,12 +26,6 @@ class HotelSearch
 
   def query_result
     puts @found_hotel.name
-  end
-end
-
-class NullHotel
-  def name
-    puts "Hotel does not exist"
   end
 end
 

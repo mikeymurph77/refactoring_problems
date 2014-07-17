@@ -1,8 +1,6 @@
 require "csv"
 require "pp"
 
-require "./hotel"
-
 class HotelReader
   def initialize(filename)
     @filename = filename
