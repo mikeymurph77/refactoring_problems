@@ -25,7 +25,7 @@ class HotelSearch
   end
 
   def query_result
-    puts @found_hotel.name
+    puts @found_hotel.query_information
   end
 end
 

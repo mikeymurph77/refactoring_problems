@@ -1,5 +1,5 @@
 class NullHotel
-  def name
+  def query_information
     puts "Hotel does not exist"
   end
 end
