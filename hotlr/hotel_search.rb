@@ -8,7 +8,8 @@ class HotelSearch
 
   def search
     prompt_for_hotel_name
-    search_match_hotel
+    find_matching_hotel
+    query_result
   end
 
   def prompt_for_hotel_name
@@ -16,17 +17,19 @@ class HotelSearch
     @user_search = gets.chomp
   end
 
-  def search_match_hotel
-    found_hotel = @hotels.find { |hotel|
-      hotel.name_of_hotel == @user_search 
+  def find_matching_hotel
+    @found_hotel = @hotels.find { |hotel|
+      hotel.name == @user_search 
     } || NullHotel.new
+  end
 
-    puts found_hotel.name
+  def query_result
+    puts @found_hotel.name
   end
 end
 
 class NullHotel
-  def hotel_name
+  def name
     puts "Hotel does not exist"
   end
 end
